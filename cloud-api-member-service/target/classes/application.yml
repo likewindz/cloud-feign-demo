@@ -1,0 +1,17 @@
+spring:
+  application:
+    # 注册时使用的服务名
+    name: cloud-api-member
+
+# eureka 服务器端口号
+server:
+  port: 8100
+
+eureka:
+  instance:
+    # 注册的主机
+    hostname: localhost
+  client:
+    serviceUrl:
+      # 服务注册url
+      defaultZone: http://localhost:8001/eureka/
