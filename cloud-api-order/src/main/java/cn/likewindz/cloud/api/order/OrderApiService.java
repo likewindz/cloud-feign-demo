@@ -13,6 +13,7 @@ public interface OrderApiService {
 
     /**
      * 传入商品名和userId 通过userId判断会员等级 确认打折情况
+     * OrderEntity 是随便编写的实体类
      */
     @GetMapping("getOrder")
     OrderEntity get(@RequestParam("productName") String productName,@RequestParam("userId") Long userId);
