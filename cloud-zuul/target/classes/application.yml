@@ -1,0 +1,25 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-zuul
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka
+zuul:
+  ignored-services: cloud-api-order,cloud-api-member
+  routes:
+    cloud-api-member:
+      path: /member/**
+    cloud-api-order:
+      path: /order/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'routes'

@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-api-order/cloud-api-order.iml" filepath="$PROJECT_DIR$/cloud-api-order/cloud-api-order.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-api-order-service/cloud-api-order-service.iml" filepath="$PROJECT_DIR$/cloud-api-order-service/cloud-api-order-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" filepath="$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-zuul/cloud-zuul.iml" filepath="$PROJECT_DIR$/cloud-zuul/cloud-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-parent.iml" filepath="$PROJECT_DIR$/spring-cloud-parent.iml" />
     </modules>
   </component>

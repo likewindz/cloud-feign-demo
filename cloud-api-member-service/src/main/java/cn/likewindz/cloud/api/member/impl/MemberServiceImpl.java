@@ -1,6 +1,7 @@
 package cn.likewindz.cloud.api.member.impl;
 
 import cn.likewindz.cloud.api.member.MemberApiService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Random;
@@ -13,9 +14,12 @@ import java.util.Random;
 @RestController
 public class MemberServiceImpl implements MemberApiService {
 
+    @Value("${server.port}")
+    String serverPort;
 
     @Override
     public Double discount(Long userId) {
+        System.out.println(serverPort);
         System.out.println(String.format("查看会员%d 的打折情况",userId));
         return new Random().nextDouble();
     }
