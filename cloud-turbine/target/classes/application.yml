@@ -1,0 +1,24 @@
+server:
+  port: 9966
+
+spring:
+  application:
+    name: cloud-turbine
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+turbine:
+  aggregator:
+    # 指定聚合的服务 在这里聚合之后 可以在dashboard中通过指定cluster查看指定集群
+    cluster-config: default
+  # 指定需要收集信息的服务名称
+  app-config: cloud-api-member,cloud-api-order
+  # 指定服务所属集群
+  cluster-name-expression: new String('default')
+  # 以主机名和端口号区分服务
+  combine-host-port: true

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: cloud-dashboard
+server:
+  port: 6699
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        #暴露hystrix监控端点
+        include: 'hystrix.stream'

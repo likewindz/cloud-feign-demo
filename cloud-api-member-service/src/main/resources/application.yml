@@ -15,3 +15,4 @@ eureka:
     serviceUrl:
       # 服务注册url
       defaultZone: http://localhost:8001/eureka/
+

@@ -15,3 +15,18 @@ eureka:
     serviceUrl:
       # 服务注册url
       defaultZone: http://localhost:8001/eureka/
+ribbon:
+  ConnectTimeout: 1000 #请求连接的超时时间
+  ReadTimeout: 3000 #请求处理的超时时间
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        #暴露hystrix监控端点
+        include: 'hystrix.stream'
+
+feign:
+  hystrix:
+    enabled: true

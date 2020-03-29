@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cloud-api-order-service" />
         <module name="cloud-api-order" />
-        <module name="cloud-api-member" />
+        <module name="cloud-trubine" />
+        <module name="cloud-api-order-service" />
+        <module name="cloud-dashboard" />
         <module name="cloud-eureka" />
+        <module name="cloud-api-member" />
         <module name="cloud-api-member-service" />
       </profile>
     </annotationProcessing>
@@ -18,7 +20,11 @@
       <module name="cloud-api-member-service" target="1.8" />
       <module name="cloud-api-order" target="1.8" />
       <module name="cloud-api-order-service" target="1.8" />
+      <module name="cloud-dashboard" target="1.8" />
       <module name="cloud-eureka" target="1.8" />
+      <module name="cloud-hystrix-dashboard" target="1.8" />
+      <module name="cloud-trubine" target="1.8" />
+      <module name="cloud-turbine" target="1.8" />
       <module name="spring-cloud-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -28,7 +34,11 @@
       <module name="cloud-api-member-service" options="-parameters" />
       <module name="cloud-api-order" options="-parameters" />
       <module name="cloud-api-order-service" options="-parameters" />
+      <module name="cloud-dashboard" options="-parameters" />
       <module name="cloud-eureka" options="-parameters" />
+      <module name="cloud-hystrix-dashboard" options="-parameters" />
+      <module name="cloud-trubine" options="-parameters" />
+      <module name="cloud-turbine" options="-parameters" />
       <module name="spring-cloud-parent" options="" />
     </option>
   </component>

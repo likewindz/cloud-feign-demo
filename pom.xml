@@ -8,6 +8,8 @@
         <module>cloud-api-order</module>
         <module>cloud-api-member-service</module>
         <module>cloud-api-order-service</module>
+        <module>cloud-dashboard</module>
+        <module>cloud-turbine</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -43,6 +45,16 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+    </dependencies>
+
+
+
 
     <build>
         <plugins>
