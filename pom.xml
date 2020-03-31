@@ -8,6 +8,8 @@
         <module>cloud-api-order</module>
         <module>cloud-api-member-service</module>
         <module>cloud-api-order-service</module>
+        <module>cloud-config</module>
+        <module>cloud-config-client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

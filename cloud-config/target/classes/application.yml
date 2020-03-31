@@ -1,0 +1,23 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: cloud-config
+  cloud:
+    config:
+      server:
+        git:
+          # 配置存储配置信息的Git仓库
+          uri: https://gitee.com/likewindz/cloud-config.git
+          username: likewindz
+          password: yuyongbo9527
+          # 开启启动时直接从git获取配置
+          clone-on-start: true
+
+          # 获取子目录下的配置 使用 {application} 占位符 则表示查找指定 配置服务的文件夹
+          search-paths: '{application}'
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/

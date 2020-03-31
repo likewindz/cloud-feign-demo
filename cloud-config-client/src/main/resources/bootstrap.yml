@@ -1,0 +1,28 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: cloud-config-client
+  cloud:
+    # config客户端配置
+    config:
+      # 分支名称
+      label: master
+      # 启用配置后缀名称
+      profile: sit
+      # 配置文件名称 默认会选择当前服务的名字 可以通过这个配置配置进行覆盖
+      name: config
+      # 配置中心地址
+      uri: http://localhost:9999
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'refresh'
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
